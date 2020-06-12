@@ -33,21 +33,22 @@ about its own change of state
   |:----------------:|:----------:|:------------------:|:---------------:|
   |add(IObserver)    |update()    |remove(IObserver o) |update()         |
   |remove(IObserver) |            |notify()            |                 |
-  |notify()          |            |================    |==============   |
+  |notify()          |            |                    |                 |
+  |                  |            | ================   |===============  |
   |                  |            |* getState()        |* display()    |  
 
   *: these are just for demonstration. other methods of ConcreteObservable and ConcreteObserver depends on the scenario.
   
   - **relations:** 
-    - IObservable **has many **is an** IObserver
+    - IObservable **has many** IObserver (to notify them upon update)
+    - ConcreteObservable **is an** IObservable
+    - ConcreteObserver **is an** IObserver
     - ConcreteObserver **has a** ConcreteObservable (to get data upon update)
 
  - **key idea: push vs. poll**
    - **poll** 2   verb  [ transitive ] 
      
-     1 to ask a lot of ** IObserver (to notify them upon update)
-    - ConcreteObservable **is an** IObservable
-    - ConcreteObserverpeople the same questions in order to find out what they think about a subject  
+     1 to ask a lot of people the same questions in order to find out what they think about a subject  
      
 
 
