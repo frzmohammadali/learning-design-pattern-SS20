@@ -31,10 +31,10 @@ about its own change of state
 
   |IObservable      |IObserver   |ConcreteObservable  |ConcreteObserver | 
   |:----------------:|:----------:|:------------------:|:---------------:|
-  |add(IObserver)    |update()    |remove(IObserver o) |update()         |
-  |remove(IObserver) |            |notify()            |                 |
-  |notify()          |            |                    |                 |
-  |                  |            | ================   |===============  |
+  |add(IObserver)    |update()    |add(IObserver o)    |update()         |
+  |remove(IObserver) |            |remove(IObserver o) |                 |
+  |notify()          |            |notify()             |                |
+  |===============   |=========   | ================   |===============  |
   |                  |            |* getState()        |* display()    |  
 
   *: these are just for demonstration. other methods of ConcreteObservable and ConcreteObserver depends on the scenario.
