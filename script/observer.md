@@ -3,9 +3,9 @@
 - and some other entity wants to know when the data has been changed in those things or in other words when they 
 changed state
 
-- one strategy would be to "pull" meaning subscriber has to keep asking the object: "have you changed?"
+- one strategy would be to "pull" meaning the subscriber has to keep asking the object: "have you changed?"
 
-- this strategy is not so good and have issues with scalability, deciding the frequency, etc.
+- this strategy is not so good and has issues with scalability, deciding the frequency, etc.
 
 - instead we want to have a "push" strategy" meaning the object should be responsible for informing the subscribers 
 about its own change of state
