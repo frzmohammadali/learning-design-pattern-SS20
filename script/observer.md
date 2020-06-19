@@ -5,7 +5,7 @@ changed state
 
 - one strategy would be to "pull" meaning subscriber has to keep asking the object: "have you changed?"
 
-- this strategy is no so good and have issues with scalability, decide the frequency, etc.
+- this strategy is not so good and have issues with scalability, deciding the frequency, etc.
 
 - instead we want to have a "push" strategy" meaning the object should be responsible for informing the subscribers 
 about its own change of state
